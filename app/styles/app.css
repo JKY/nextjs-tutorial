@@ -1,0 +1,106 @@
+.navigation {
+    display: block;
+    width: 100%;
+}
+
+.navigation .logo {
+    width: 60px;
+    margin: 2rem;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main {
+    display: flex;
+    margin: 6rem auto auto auto;
+    justify-content: center;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    min-width: 584px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 25.6px 57.6px 0 rgba(0, 0, 0, .22), 0 4.8px 14.4px 0 rgba(0, 0, 0, .18);
+    overflow: hidden;
+}
+
+.question .progress {
+    width: 100%;
+    background-color: #eee;
+    height: 3px;
+}
+
+.question .progress span {
+    display: block;
+    background-color: #5bca67ed;
+    height: 100%;
+    transition: all 1s ease-out;
+}
+
+.question .content {
+    padding: 4rem 2rem;
+}
+
+.question .content h1 {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2;
+}
+
+.question .content ul {
+    margin: 2rem auto;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.question .content ul li {
+    display: inline;
+    padding: 12px;
+    background-color: #bb2d7e;
+    border-radius: 100px;
+    font-size: 0.8rem;
+    color: white;
+    cursor: pointer;
+    min-width: 100px;
+    text-align: center;
+    flex: auto;
+    user-select: none;
+}
+
+.question ul li:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.report {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 25.6px 57.6px 0 rgba(0, 0, 0, .22), 0 4.8px 14.4px 0 rgba(0, 0, 0, .18);
+    overflow: hidden;
+}
+
+.report .avatar {
+    background-size: cover;
+    width: 480px;
+    height: 480px;
+}
+
+.report .summery {
+    font-size: 1.2rem;
+    line-height: 1.65;
+    max-width: 480px;
+    padding: 6rem 6rem;
+    align-items: center;
+    text-align: justify;
+}

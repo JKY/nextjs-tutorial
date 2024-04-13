@@ -1,0 +1,9 @@
+.question {
+    display: block;
+    width: 50%;
+    margin:auto;
+    background-color: #eee;
+}
+.question h1 {
+    font-size: 1.2rem;
+}
