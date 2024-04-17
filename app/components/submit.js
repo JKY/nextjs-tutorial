@@ -2,12 +2,11 @@
 import { useState } from "react"
 import { getType } from "@/app/actions/action"
 import Card from "@/app/components/card"
-import Data from "@/app/components/data"
-export default function Submit() {
+export default function Submit({data}) {
     const [loading, setLoading] = useState(false);
     const onCompleted = async function (result) {
         setLoading(true);
         await getType(result);
     }
-    return loading ? (<div></div>) : (<Card data={Data} onCompleted={onCompleted} />);
+    return loading ? (<div></div>) : (<Card data={data} onCompleted={onCompleted} />);
 }
