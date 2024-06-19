@@ -1,5 +1,6 @@
 import "@/app/styles/globals.css"
 import "@/app/styles/app.css"
+import { Analytics } from "@vercel/analytics/react"
 export const metadata = {
     title: '中文 MBTI 人格测验',
     keywords:'性格测试, 中文MBTI性格测试, 人格分析, 16型人格',
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
                 <div className="wrapper">
                     <section className="main">{children}</section>
                 </div>
+                <Analytics />
             </body>
         </html>
     );
